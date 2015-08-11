@@ -16,7 +16,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: "fontcustom";
-    src: url("./fontcustom_2ff0d0a8a81bdd9d5e83286e4ee3c7d5.svg#fontcustom") format("svg");
+    src: url("../fonts/fontcustom_2ff0d0a8a81bdd9d5e83286e4ee3c7d5.svg#fontcustom") format("svg");
   }
 }
 
