@@ -33,7 +33,7 @@
 		$('.section-description').html("In just a few clicks, you'll be able to get your Fitbit step, distance, floor counts and more. When you're ready, hit the button below and you'll be asked to give Tableau access to your Fitbit data. Once complete, an extract of your data will be created and you can start vizzing!.</br><a class='button button-primary button-margin' id='letsgo'>Lets go!</a>");
 		$('#letsgo').bind('click', function(){
 				$('.ajax-loading').show();
-				window.location.href = "https://www.fitbit.com/oauth2/authorize?response_type=token&client_id=229M2H&redirect_uri=http://www.theinformationlab.co.uk/data/fitbit.html&scope=activity%20nutrition%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&expires_in=2592000";
+				window.location.href = "https://www.fitbit.com/oauth2/authorize?response_type=token&client_id=229M2H&redirect_uri=http://data.theinformationlab.co.uk/fitbit.html&scope=activity%20nutrition%20heartrate%20location%20nutrition%20profile%20settings%20sleep%20social%20weight&expires_in=2592000";
 			});
 		tableau.initCallback();
 	}
@@ -98,7 +98,7 @@
 				};
 			};
 		})();
-	  var baseURL = 'http://www.theinformationlab.co.uk/data/fitbit_callback.php';
+	  var baseURL = 'http://data.theinformationlab.co.uk/fitbit_callback.php';
 		var steps_request_data = {
 			url: baseURL + '?access_token='+access_token+'&req=activities&type=steps&userid='+user_id,
 			method: 'GET'
